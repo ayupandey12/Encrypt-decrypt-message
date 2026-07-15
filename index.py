@@ -5,10 +5,8 @@ print("Encrypt & Decrypt your messages")
 print("****************")
 chars=" "+string.punctuation+string.ascii_letters+string.digits;
 chars=list("".join(chars))
-print(type(chars),chars)
 key=chars.copy();
 random.shuffle(key)
-print(key)
 #Encrypt message
 isrunning=True
 while isrunning:    
@@ -23,7 +21,7 @@ while isrunning:
     print(cipper_text)
     print("*************")
 #Decrypt message
-    encryptedmessage=input("Enter your encrypted message")
+    encryptedmessage=input("Enter your encrypted message: ")
     plain_text=""
     for m in encryptedmessage:
         index=key.index(m)
